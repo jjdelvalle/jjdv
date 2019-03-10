@@ -395,6 +395,23 @@ $(document).ready(function () {
     });
   }
 
+
+  // LEFTy js
+  $('#profileButton').click(function(){
+    $('#genderPred').html('');
+    $('#agePred').html('');
+
+    $.ajax({
+      url: "localhost:8080/predict",
+      cache: false,
+      success: function(data){
+        parsedData = jQuery.parseJSON(data)
+        $('#genderPred').html('Gender: ' + parsedData.gender);
+        $('#agePred').html('Age: ' + parsedData.age);
+      }
+    });
+  });
+
   $("select").niceSelect();
 
 
