@@ -402,12 +402,15 @@ $(document).ready(function () {
     $('#agePred').html('');
 
     $.ajax({
-      url: "localhost:8080/predict",
+      url: "http://0.0.0.0:8080/get_author?text=" + $('#anonymousText').val(),
       cache: false,
+      async: true,
+      dataType: 'json',
       success: function(data){
-        parsedData = jQuery.parseJSON(data)
-        $('#genderPred').html('Gender: ' + parsedData.gender);
-        $('#agePred').html('Age: ' + parsedData.age);
+	console.log(data);
+        $('#genderPred').html('Gender: ' + data.gender);
+        $('#agePred').html('Age: ' + data.age);
+        $('#regionPred').html('Region: ' + data.region);
       }
     });
   });
