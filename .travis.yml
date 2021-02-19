@@ -3,6 +3,7 @@ rvm:
   - 2.7.2
 
 before_script:
+ - ls .script
  - chmod +x ./script/cibuild
 
 # Assume bundler is being used, therefore
