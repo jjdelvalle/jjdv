@@ -289,8 +289,16 @@ footer.sticky-bottom {
       }
     }
   }
+  .card {
+    background-color: var(--global-bg-color);
+    .card-body .card-text {
+      color: var(--global-text-color);
+    }
+  }
+
   .card img {
     width: 100%;
+    background-color: #{$white-color};
   }
 }
 
