@@ -64,8 +64,8 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: jblog  # your blog must have a name for it to show up in the nav bar
+blog_description: This blog is hosted at codewrites.me
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -112,7 +112,6 @@ kramdown:
 # Includes & excludes
 include: ['_pages']
 exclude:
-  - bin
   - Gemfile
   - Gemfile.lock
   - vendor
@@ -136,8 +135,8 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Del Valle
+  first_name: [Jose, J.]
 
   style: apa
   locale: en

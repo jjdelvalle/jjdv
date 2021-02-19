@@ -1,6 +1,6 @@
 # Personal site
 
-![https://api.travis-ci.org/jjdelvalle/jjdv.svg?branch=master]
+![Travis CI status](https://api.travis-ci.org/jjdelvalle/jjdv.svg?branch=master)
 
 Hosted on https://jjdv.xyz
 
