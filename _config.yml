@@ -98,15 +98,13 @@ news_limit: 5
 # Markdown and syntax highlight
 markdown: kramdown
 highlighter: rouge
-highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
   syntax_highlighter_opts:
-    css_class: 'highlight'
     span:
       line_numbers: false
     block:
-      line_numbers: false
+      line_numbers: true
       start_line: 1
 
 # Includes & excludes
@@ -127,6 +125,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-twitter-plugin
+  - jekyll-sitemap
   - jemoji
 
 # -----------------------------------------------------------------------------
@@ -161,7 +160,7 @@ scholar:
 enable_google_analytics:    false
 enable_panelbear_analytics: false
 enable_mansory:             true
-enable_math:                true
+enable_math:                false
 enable_tooltips:            false
 enable_darkmode:            true
 show_social_icons:          false
