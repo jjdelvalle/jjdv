@@ -25,4 +25,4 @@ My hobbies include playing the guitar, helping others with the GRE, and language
 
 ***
 
-My [CV can be found here](https://jjdv.xyz/personal/cv.pdf) and my [LinkedIn profile can be found here](https://linkedin.com/in/jjdelvalle).
+[My CV](https://jjdv.xyz/personal/cv.pdf) details more about my journey and so does my [LinkedIn profile](https://linkedin.com/in/jjdelvalle).
