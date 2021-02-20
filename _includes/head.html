@@ -31,16 +31,16 @@
 <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
 
 <!-- JQuery -->
 {% include scripts/jquery.html %}
 
 <!-- Theming-->
 {% if site.enable_darkmode %}
-  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   <!-- Load DarkMode JS -->
-<script src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
 {% endif %}
 
 {% if site.enable_google_analytics %}

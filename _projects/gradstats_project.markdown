@@ -34,7 +34,7 @@ You can also personalize somewhat the look of the graphs, but really the meat of
 
 The motivation behind this project was just to democratize GradCafe data in a way that’s easily accessible to people regardless of their background and especially regardless of their coding skills. My previous attempt at doing this simply involved democratizing the way you scraped data; hopefully this attempt will be a lot more suitable in considering the diversity in graduate school applicants.
 
-In line with my objective, the app was built using `streamlit` which made things really easy. The code is [available on Github](https://github.com/jjdelvalle/grad_stats) for anyone to check out but it’s definitely nothing impressive.
+In line with my objective, the app was built using `streamlit` which made things really easy. [The code is available on Github](https://github.com/jjdelvalle/grad_stats) for anyone to check out but it’s definitely nothing impressive.
 
 
 **Anyway, here’s the link: [Grad Stats](https://gradstats.jjdv.xyz).**
