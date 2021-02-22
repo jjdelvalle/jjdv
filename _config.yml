@@ -10,7 +10,7 @@ email: delvallejacobo@galileo.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   My personal site showcasing projects and past experiences
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>. Find this site <a href="https://github.com/jjdelvalle/jjdv" target="_blank">on GitHub</a>.
+  Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noreferrer">Jekyll</a>. Find this site <a href="https://github.com/jjdelvalle/jjdv" target="_blank" rel="noreferrer">on GitHub</a>.
 
 url: https://jjdv.xyz
 baseurl: '' # the subpath of your site, e.g. /blog/

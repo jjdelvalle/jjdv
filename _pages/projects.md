@@ -12,7 +12,7 @@ nav: true
   {% for project in sorted_projects %}
   <div class="grid-item">
     {% if project.redirect %}
-    <a href="{{ project.redirect }}" target="_blank">
+    <a href="{{ project.redirect }}" target="_blank" rel="noreferrer">
     {% else %}
     <a href="{{ project.url | relative_url }}">
     {% endif %}
@@ -27,7 +27,7 @@ nav: true
             {% if project.github %}
             <div class="github-icon">
               <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}" target="_blank"><i class="fab fa-github gh-icon"></i></a>
+                <a href="{{ project.github }}" target="_blank" rel="noreferrer"><i class="fab fa-github gh-icon"></i></a>
               </div>
               {% if project.github_stars %}
               <span class="stars" data-toggle="tooltip" title="GitHub Stars">
