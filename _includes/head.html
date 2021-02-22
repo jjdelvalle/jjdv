@@ -24,10 +24,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/{{ site.academicons.version }}/css/academicons.min.css" integrity="{{ site.academicons.integrity }}" crossorigin="anonymous" media="print" onload="this.media='all'">
 <link rel="stylesheet" type="text/css" href="{{ '/assets/css/roboto.css' | relative_url }}" media="print" onload="this.media='all'">
 
-<!-- Preload font awesome stuff I guess -->
-<link rel="preload" href="{{ '/assets/webfonts/fa-brands-400.woff2' | relative_url }}" as="font">
-<link rel="preload" href="{{ '/assets/webfonts/fa-regular-400.woff2' | relative_url }}" as="font">
-<link rel="preload" href="{{ '/assets/webfonts/fa-solid-900.woff2' | relative_url }}" as="font">
+<!-- Preload font awesome stuff I guess, since they're fonts i use anonymous fetching -->
+<link rel="preload" href="{{ '/assets/webfonts/fa-brands-400.woff2' | relative_url }}" as="font" crossorigin="anonymous">
+<link rel="preload" href="{{ '/assets/webfonts/fa-regular-400.woff2' | relative_url }}" as="font" crossorigin="anonymous">
+<link rel="preload" href="{{ '/assets/webfonts/fa-solid-900.woff2' | relative_url }}" as="font" crossorigin="anonymous">
 
 <!-- Styles -->
 <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
