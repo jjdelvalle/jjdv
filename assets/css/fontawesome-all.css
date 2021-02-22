@@ -149,8 +149,8 @@
   font-size: 2em; }
 .fa-inverse {
   color: #fff; }
-.fa-cloud-moon:before {
-  content: "\f6c3"; }
+.fa-moon:before {
+  content: "\f186"; }
 .fa-sun:before {
   content: "\f185"; }
 .fa-star:before {
