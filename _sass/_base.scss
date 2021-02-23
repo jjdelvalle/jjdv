@@ -240,6 +240,10 @@ footer.sticky-bottom {
   background-color: #{$white-color};
 }
 
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
 
 // Publications
 
