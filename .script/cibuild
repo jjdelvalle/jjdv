@@ -5,4 +5,4 @@ echo "Building site..."
 bundle exec jekyll build
 
 echo "Sanity checking site..."
-bundle exec htmlproofer ./_site
+bundle exec htmlproofer ./_site --disable-external
