@@ -4,4 +4,10 @@
 
 Hosted on https://jjdv.xyz
 
+## Usage
+
+Build the site using
+
+`bundle exec jekyll build`
+
 Built with [Jekyll](http://jekyllrb.com/) and the [al-folio](https://github.com/alshedivat/al-folio) theme.
