@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Going to Grad School!
+title: Going to grad school!
 date: 2021-08-26
 inline: false
 ---
@@ -8,7 +8,7 @@ inline: false
 In December of 2020 I applied to multiple grad school programs.
 I was accepted to two different programs, two very different programs.
 Both of them however, with a focus on NLP, which is exactly what I wanted.
-I ended up choosing a great program, namely the *Erasmus+ Language and Communication Technologies* program.
+I ended up choosing a great program, namely the *Erasmus Mundus Language and Communication Technologies* program.
 
 I'll be spending the next two years learning as much as possible about the NLP field and hopefully doing research!
 Very excited by both, but especially being able to do research.
