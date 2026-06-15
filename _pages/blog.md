@@ -197,25 +197,26 @@ pagination:
 
   </ul>
 
-  {% if paginator.total_pages > 1 %}
-    <nav aria-label="Page navigation">
-        <ul class="af-pagination">
-        <li class="af-page-item {% unless paginator.previous_page %}disabled{% endunless %}">
-            <a class="af-page-link" href="{{ paginator.previous_page_path | relative_url }}" tabindex="-1" aria-disabled="{{ paginator.previous_page }}"
-            >&lt;</a>
-        </li>
-        {% if paginator.page_trail %}
-            {% for trail in paginator.page_trail %}
-            <li class="af-page-item {% if page.url == trail.path %}active{% endif %}">
-                <a class="af-page-link" href="{{ trail.path | relative_url | remove: 'index.html' }}" title="{{ trail.title }}">{{ trail.num }}</a>
-            </li>
-            {% endfor %}
+  {% if page.pagination.enabled and paginator.total_pages > 1 %}
+    <nav aria-label="Page navigation" class="mt-5">
+      <ul class="pagination justify-content-center">
+        {% if paginator.previous_page %}
+          <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a></li>
+        {% else %}
+          <li class="page-item disabled"><span class="page-link">&laquo; Prev</span></li>
         {% endif %}
-        <li class="af-page-item {% unless paginator.next_page %}disabled{% endunless %}">
-            <a class="af-page-link" href="{{ paginator.next_page_path | relative_url }}">&gt;</a>
-        </li>
-        </ul>
+        {% for trail in paginator.page_trail %}
+          <li class="page-item {% if page.url == trail.path %}active{% endif %}">
+            <a class="page-link" href="{{ trail.path | relative_url }}">{{ trail.num }}</a>
+          </li>
+        {% endfor %}
+        {% if paginator.next_page %}
+          <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a></li>
+        {% else %}
+          <li class="page-item disabled"><span class="page-link">Next &raquo;</span></li>
+        {% endif %}
+      </ul>
     </nav>
-    {% endif %}
+  {% endif %}
 
 </div>
