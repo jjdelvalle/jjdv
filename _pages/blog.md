@@ -189,8 +189,4 @@ pagination:
 
   </ul>
 
-<!-- {% if page.pagination.enabled %}
-{% include pagination.liquid %}
-{% endif %} -->
-
 </div>
