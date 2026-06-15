@@ -98,6 +98,10 @@ news_limit: 5
 markdown: kramdown
 highlighter: rouge
 kramdown:
+  # We're using mathjax because gh-pages forces it
+  # we're also usint the auto-render katex extension because of it
+  math_engine:   mathjax
+
   input: GFM
   syntax_highlighter_opts:
     span:
