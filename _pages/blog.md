@@ -23,10 +23,10 @@ pagination:
 
 {% if blog_name_size > 0 or blog_description_size > 0 %}
   <!-- Cleaned up header sizes and spacing -->
-  <div class="header-bar mb-4">
-    <h1 class="display-4 fw-bold">{{ site.blog_name }}</h1>
-    <p class="lead text-muted fs-5">{{ site.blog_description }}</p>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">{{ blog.blog_name }}</h1>
+    <p class="post-description">{{ blog.blog_description }}</p>
+  </header>
 {% endif %}
 
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
