@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Jacobo
 middle_name:
 last_name: Del Valle
-email: delvallejacobo@galileo.edu
+email: delvallejacobo@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   My personal site showcasing projects and past experiences
 footer_text: >
@@ -64,7 +64,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # -----------------------------------------------------------------------------
 
 blog_name: jblog  # your blog must have a name for it to show up in the nav bar
-blog_description: This blog is hosted at codewrites.me
+blog_description: For any random thoughts, both technical and non-technical topics.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -72,7 +72,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+# disqus_shortname: al-folio # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
