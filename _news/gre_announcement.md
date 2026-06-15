@@ -18,6 +18,6 @@ It also supports the fact that I have a solid foundation and that I most likely 
 
 ****
 
-I detail how I studied for the test [on my blog](https://codewrites.me/grad-school/gre/2020/02/16/thoughts-on-gre/). Definitely check that out. I also have a few other posts regarding the GRE on there.
+I detail how I studied for the test [on my blog]({% post_url 2020-02-16-thoughts-on-gre %}). Definitely check that out. I also have a few other posts regarding the GRE on there.
 
 That's all for now. Just wanted to share as I'm really happy with this result!
