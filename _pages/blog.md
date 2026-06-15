@@ -24,8 +24,8 @@ pagination:
 {% if blog_name_size > 0 or blog_description_size > 0 %}
   <!-- Cleaned up header sizes and spacing -->
   <header class="post-header">
-    <h1 class="post-title">{{ blog.blog_name }}</h1>
-    <p class="post-description">{{ blog.blog_description }}</p>
+    <h1 class="post-title">{{ site.blog_name }}</h1>
+    <p class="post-description">{{ site.blog_description }}</p>
   </header>
 {% endif %}
 
