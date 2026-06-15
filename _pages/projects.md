@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Recent Data Science projects
+description: Recent side projects
 nav: true
 ---
 

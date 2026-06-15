@@ -2,9 +2,19 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials I've used in my teaching, talks, and TA experience
+description: Materials and details of my teaching, talks, and TA experience
 nav: true
 ---
+
+## 2022-2023
+
+### Statistical Natural Language Processing
+
+TA'd under Prof. Dietric Klakow at University of Saarland
+
+### Neural Networks: Theory and Implementation
+
+TA'd under Prof. Dietric Klakow at University of Saarland
 
 ## 2020
 
