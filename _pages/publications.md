@@ -11,7 +11,7 @@ nav: true
 
 {% for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[author=Del Valle, Jacobo]* %}
+  {% bibliography -f papers -q @*[year={{y}} && author^=Del Valle]* %}
 {% endfor %}
 
 </div>
