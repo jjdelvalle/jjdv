@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why Is There No D# Major Scale"
+title:  "Why Is There No D# Major Scale?"
 date:   2021-01-22
 categories: music theory
 hasmath:   "true"
@@ -16,7 +16,7 @@ $$D\sharp\ E\sharp\ F\sharp\sharp\ G\sharp\ A\sharp\ B\sharp\ C\sharp\sharp\ D\s
 
 As you can see, every note has a sharp and $$C$$ and $$F$$ even have double(!) sharps. There's also the fact that $$E\sharp$$ is simply $$F$$ really, but due to theory we notate it as $$E\sharp$$ nevertheless, there's also $$B\sharp$$, etc., etc. Maybe you can kinda see why it could be less than ideal to deal with a scale like this.
 
-Now, while this is an actual scale and is completely valid, reading music written in this key can be quite uncomfortable especially considering there's a perfectly valid alternative. 
+Now, while this is an actual scale and is completely valid, reading music written in this key can be quite uncomfortable especially considering there's a perfectly valid alternative.
 
 What's the enharmonic note for $$D\sharp$$? It's $$E\flat$$. Its major scale would be:
 
