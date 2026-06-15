@@ -5,7 +5,7 @@ date:   2021-04-26
 categories: grad-school gre gradcafe
 ---
 
-A couple of months ago I realized [a web app](https://gradstats.jjdv.xyz) that lets people play around with historical graduate admissions data. Since then, thousands of people have used it and I took the liberty of tracking what people are searching for on the app.
+A couple of months ago I realized [a web app](https://gradstats.jacobodelvalle.com) that lets people play around with historical graduate admissions data. Since then, thousands of people have used it and I took the liberty of tracking what people are searching for on the app.
 
 *Note: I don't track your personal info, IP address, or anything. I only track what is being searched for and at what time.*
 
@@ -45,7 +45,7 @@ As I mentioned in this post before, are I'm not tracking information on the user
 
 It seems like the app is particularly popular for people outside the US, specifically international applicants with degrees from outside the US.
 
-As my [initial analysis]({% post_url 2021-01-18-gradcafe-data %}) showed, this is probably not due to international applicants getting results later than American applicants. 
+As my [initial analysis]({% post_url 2021-01-18-gradcafe-data %}) showed, this is probably not due to international applicants getting results later than American applicants.
 
 ## What schools are more popular?
 

@@ -7,7 +7,7 @@ categories: grad-school gre gradcafe
 
 Continuation of [this post]({% post_url 2021-01-18-gradcafe-data %})
 
-**TL;DR Here's the link to the app: [https://gradstats.jjdv.xyz](https://gradstats.jjdv.xyz)**
+**TL;DR Here's the link to the app: [https://gradstats.jacobodelvalle.com](https://gradstats.jacobodelvalle.com)**
 
 Recently I wrote about GradCafe stats and understandbly, people wanna know about stats for specific schools, programs, cycles, etc.
 
@@ -34,5 +34,5 @@ In line with my objective, the app was built using `streamlit` which made things
 
 Server running the app is pretty weak so it probably can't tolerate a Reddit Hug of Death yet, but I'm trying to optimize it further and then I'll try to make it so a not-too-expensive server can handle the app just fine.
 
-Anyway, here's the link: **[Grad Stats](https://gradstats.jjdv.xyz)**
+Anyway, here's the link: **[Grad Stats](https://gradstats.jacobodelvalle.com)**
 
