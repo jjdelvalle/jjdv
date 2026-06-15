@@ -23,11 +23,11 @@ Transfer learning has been a concept that was thought not to be applicable for N
 Results achieved using LEFTy (based on fine tuning techniques outlined by Howard and Ruder in their ULMFiT paper) are near the SOTA for author profiling.
 LEFTy
 
-A language model was trained on Spanish Wikipedia articles using both and an LSTM and a QRNN model. More on how the language model was trained can be found [here](projects/lefty_project).
+A language model was trained on Spanish Wikipedia articles using both and an LSTM and a QRNN model. More on how the language model was trained can be found [here]({% link _projects/spanish_lm_project.markdown %}).
 
 Training and testing sets used to train this project were the PAN'17 and SpanText corpora. Project's objective was specifically creating a text profiler for the Spanish language which is why those corpora were used.
 
-The fine tuning techniques for both the LM and the classifier models are taken from the ULMFiT paper linked above. The process and full results are presented in my [undergrad thesis](https://jacobodelvalle.com/personal/main.pdf) on this subject (in Spanish).
+The fine tuning techniques for both the LM and the classifier models are taken from the ULMFiT paper linked above. The process and full results are presented in my [undergrad thesis](personal/main.pdf) on this subject (in Spanish).
 
 I used to run a live demo on this site, but the cost of running an instance separate of my webserver wasn't worth it. I might eventually bring it back once I've worked on something more lightweight which quickly became a goal of mine.
 
