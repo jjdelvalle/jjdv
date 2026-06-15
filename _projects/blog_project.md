@@ -11,7 +11,7 @@ Created my own blog using `jekyll` and hosting it on GH Pages. At the time of wr
 
 Finding a template proved to be annoying so I might just have to create me own. I have marginally modified the current template being used, but it still doesn't feel quite right. Definitely something to improve upon.
 
-The blog can be found under at this URL: **https://jacobodelvalle.com/blog/**.
+The blog can be found under at this URL: **<https://jacobodelvalle.com/blog/>**.
 
 ### Favorite entries
 
