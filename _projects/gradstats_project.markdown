@@ -37,7 +37,7 @@ The motivation behind this project was just to democratize GradCafe data in a wa
 In line with my objective, the app was built using `streamlit` which made things really easy. [The code is available on Github](https://github.com/jjdelvalle/grad_stats) for anyone to check out but it’s definitely nothing impressive.
 
 
-**Anyway, here’s the link: [Grad Stats](https://gradstats.jjdv.xyz).**
+**Anyway, here’s the link: [Grad Stats](https://gradstats.jacobodelvalle.com).**
 
 The app is hosted on my personal site and I hope it proves useful to everyone curious about the graduate admissions process.
 

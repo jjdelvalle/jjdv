@@ -8,13 +8,9 @@ nav: true
 
 ## 2022-2023
 
-### Statistical Natural Language Processing
+- **Statistical Natural Language Processing**: TA'd under Prof. Dietric Klakow at University of Saarland
 
-TA'd under Prof. Dietric Klakow at University of Saarland
-
-### Neural Networks: Theory and Implementation
-
-TA'd under Prof. Dietric Klakow at University of Saarland
+- **Neural Networks: Theory and Implementation**: TA'd under Prof. Dietric Klakow at University of Saarland
 
 ## 2020
 
