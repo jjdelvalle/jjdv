@@ -64,6 +64,7 @@ ETS presents the following data for the GRE:
 | Verbal reasoning | 1,640,350 | 150.37 | 8.49 |
 | Quantitative reasoning | 1,643,587 | 153.39 | 9.35 |
 | Analytical writing | 1,635,221 | 3.58 | 0.85 |
+{: .table .table-bordered .table-striped}
 
 These numbers do not align with the GRE stats gathered from GradCafe. This suggegsts that the biases I pointed out earlier do apply. However, these are the people who you'll be competing with, if you're applying at top programs or applying for fellowships, or if you're applying for scholarships. These are the more relevant stats for the more serious applicants, i.e. you, you reading this post.
 
