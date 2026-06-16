@@ -10,7 +10,7 @@ gem 'jekyll-twitter-plugin'
 gem 'jekyll-sitemap'
 gem 'jemoji'
 gem 'unicode_utils'
-gem 'rdiscount', '2.2.0.2'
+gem 'rdiscount', '2.2.7.4'
 
 group :test do
     gem "html-proofer"
