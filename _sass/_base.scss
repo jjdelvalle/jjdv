@@ -2,6 +2,8 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+@use "variables" as v;
+
 // Typography
 
 p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
@@ -112,7 +114,7 @@ blockquote {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid v.$grey-color-light;
   opacity: 0.95;
   background-color: var(--global-bg-color);
 }
@@ -218,7 +220,7 @@ blockquote {
 
 // Footer
 footer.sticky-bottom {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid v.$grey-color-light;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 0.9rem;
@@ -229,7 +231,7 @@ footer.sticky-bottom {
     .page-link {
       color: var(--global-text-color);
       &:hover {
-        color: $black-color;
+        color: v.$black-color;
       }
     }
     &.active .page-link {
@@ -264,12 +266,12 @@ footer.sticky-bottom {
 
   .card img {
     width: 100%;
-    background-color: #{$white-color};
+    background-color: #{v.$white-color};
   }
 }
 
 .row .col-sm img {
-  background-color: #{$white-color};
+  background-color: #{v.$white-color};
 }
 
 img {
@@ -296,8 +298,8 @@ img {
     }
   }
   h2.year {
-    color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
+    color: v.$grey-color-light;
+    border-top: 1px solid v.$grey-color-light;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
