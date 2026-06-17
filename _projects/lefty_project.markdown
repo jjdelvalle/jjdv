@@ -27,7 +27,7 @@ A language model was trained on Spanish Wikipedia articles using both and an LST
 
 Training and testing sets used to train this project were the PAN'17 and SpanText corpora. Project's objective was specifically creating a text profiler for the Spanish language which is why those corpora were used.
 
-The fine tuning techniques for both the LM and the classifier models are taken from the ULMFiT paper linked above. The process and full results are presented in my [undergrad thesis](personal/main.pdf) on this subject (in Spanish).
+The fine tuning techniques for both the LM and the classifier models are taken from the ULMFiT paper linked above. The process and full results are presented in my [undergrad thesis](/personal/main.pdf) on this subject (in Spanish).
 
 I used to run a live demo on this site, but the cost of running an instance separate of my webserver wasn't worth it. I might eventually bring it back once I've worked on something more lightweight which quickly became a goal of mine.
 
