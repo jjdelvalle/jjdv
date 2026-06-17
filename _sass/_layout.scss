@@ -2,6 +2,8 @@
  * Content
  ******************************************************************************/
 
+@use "variables" as v;
+
  body {
    padding-bottom: 70px;
    color: var(--global-text-color);
@@ -19,7 +21,7 @@
  }
 
 .container {
-  max-width: $max-content-width;
+  max-width: v.$max-content-width;
 }
 
 // Profile

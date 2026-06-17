@@ -31,3 +31,6 @@ $grey-color-dark:     color.adjust($grey-color, $lightness: -25%);
 
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
+
+// Max width default
+$max-content-width: 930px !default;

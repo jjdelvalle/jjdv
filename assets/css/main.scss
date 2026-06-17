@@ -4,9 +4,10 @@
 @charset "utf-8";
 
 // Dimensions
-$max-content-width: {{site.max_width}};
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
 
-@forward "variables";
-@forward "themes";
-@forward "layout";
-@forward "base";
+@use "themes";
+@use "layout";
+@use "base";
