@@ -27,4 +27,4 @@ My hobbies include photography, playing the guitar, learning new languages, and 
 
 ***
 
-[My CV](personal/cv.pdf) details more about my journey and so does my [LinkedIn profile](https://linkedin.com/in/jjdelvalle).
+[My CV](personal/cv.pdf) details more about my journey and so does my [LinkedIn profile](https://linkedin.com/in/{{site.linkedin_username}}).

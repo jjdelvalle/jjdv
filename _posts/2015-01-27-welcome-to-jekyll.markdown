@@ -14,4 +14,4 @@ Blog will most likely be about stuff I do during the day/week, depending on how 
 
 Check out the [my Github page][github] for more info on what I've done and what I like to do. I'd share some other accounts, but I don't think it'd be worth and I'm not that comfortable with it either.
 
-[github]:      https://github.com/clinchergt
+[github]:      https://github.com/{{site.github_username}}
