@@ -6,9 +6,7 @@
 // Dimensions
 $max-content-width: {{site.max_width}};
 
-@forward
-  "variables",
-  "themes",
-  "layout",
-  "base"
-;
+@forward "variables";
+@forward "themes";
+@forward "layout";
+@forward  "base";
