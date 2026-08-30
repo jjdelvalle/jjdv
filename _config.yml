@@ -196,6 +196,15 @@ enable_darkmode:            true
 show_social_icons:          false
 
 # -----------------------------------------------------------------------------
+# Sass
+# -----------------------------------------------------------------------------
+# Jekyll ships expanded CSS by default. `compressed` also strips /* */ comments,
+# so the heavily-commented shims in _sass/ stay documented in source without
+# shipping ~1.9 KB of prose to every visitor.
+sass:
+  style: compressed
+
+# -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
 

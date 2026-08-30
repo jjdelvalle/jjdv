@@ -61,8 +61,24 @@
   FontAwesome faces -- 167 KB fetched at high priority, competing with the
   hero image and CSS, to render icons that sit below the fold.
 {%- endcomment %}
-<link rel="preload" href="{{ '/assets/img/prof_pic.webp' | relative_url }}" as="image" type="image/webp">
+<link rel="preload" href="{{ '/assets/img/prof_pic.webp' | relative_url }}" as="image" type="image/webp" fetchpriority="high">
 {%- endif %}
+{%- comment -%}
+  The font is self-hosted, so preload it here rather than letting the browser
+  wait until roboto.css has downloaded AND parsed before it can even discover
+  the URL. That chain was the 400 ms tail of the mobile critical path.
+
+  `crossorigin` is required even though this is same-origin: font fetches are
+  always made in CORS mode, and a preload without it does not match the
+  @font-face request, so the file would be downloaded twice.
+
+  latin only. latin-ext is another 24 KB that most page views never need, and
+  it loads on demand from roboto.css when a glyph actually calls for it.
+
+  Deliberately no fetchpriority here -- font-display:swap paints text in a
+  fallback face immediately, so the hero image should win the priority contest.
+{%- endcomment %}
+<link rel="preload" href="{{ '/assets/webfonts/roboto-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
 <link rel="canonical" href="{{ page.url | replace: '/index.html', '/' | absolute_url }}">
 {% include jsonld.html %}
