@@ -413,3 +413,18 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
+
+/*******************************************************************************
+ * Shadow utilities, formerly provided by Material Design Bootstrap.
+ *
+ * MDB cost 91 KB of JS and 28 KB of CSS (gzipped) and the entire site used
+ * exactly two of its classes -- these two. common.js even stripped MDB's
+ * runtime `waves-effect waves-light` classes back off the navbar. Values below
+ * are MDB 4.19.1's originals, so rendering is unchanged.
+ ******************************************************************************/
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}

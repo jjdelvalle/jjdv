@@ -1,0 +1,22 @@
+{%- comment -%}
+  Inlined and render-blocking on purpose. This sets data-theme on <html> before
+  the first paint; loading it with `defer` (as it was) runs it after parsing, so
+  the page painted in the wrong theme and then repainted. The file's own opening
+  comment said as much: "Has to be in the head tag, otherwise a flicker effect
+  will occur." Small enough that inlining also saves a request.
+{%- endcomment -%}
+<script>
+  let initTheme = (theme) => {
+    if (theme == null) {
+      const userPref = window.matchMedia;
+      if (userPref && userPref('(prefers-color-scheme: dark)').matches) {
+        theme = 'dark';
+      }
+    }
+    if (theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+    localStorage.setItem("theme", theme);
+  }
+  initTheme(localStorage.getItem("theme"));
+</script>

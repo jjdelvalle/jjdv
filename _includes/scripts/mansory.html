@@ -1,4 +1,8 @@
-{% if site.enable_mansory %}
+{%- comment -%}
+  Opt-in per page. Only _pages/projects.md renders a .grid, but this used to be
+  gated on a site-wide flag, so masonry + imagesLoaded (9 KB) loaded everywhere.
+{%- endcomment -%}
+{% if page.enable_mansory %}
 <!-- Mansory & imagesLoaded -->
 <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>

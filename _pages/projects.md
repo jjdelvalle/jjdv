@@ -2,6 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
+enable_mansory: true # the only page that renders a .grid
 description: Recent side projects
 nav: true
 ---
