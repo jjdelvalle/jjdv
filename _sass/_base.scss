@@ -438,6 +438,7 @@ html.transition *:after {
 // different stroke weight and antialiasing, same hues.
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 300;  /* Now explicitly here instead of MDB */
 }
 
 // Buttons. The publication links carry `.btn .btn-sm` with no colour variant.
