@@ -428,3 +428,26 @@ html.transition *:after {
 .z-depth-1 {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
 }
+
+// Body font. MDB's ONLY font-family declaration was `body { font-family: "Roboto", sans-serif }`
+// -- it set no heading font, so this single rule restores all of the site's typography.
+// roboto.css declares nine @font-face blocks but applies them to nothing except
+// .material-icons, so without this the browser downloads Roboto and then renders
+// everything in Bootstrap's system stack instead (San Francisco on macOS, Segoe UI
+// on Windows). That typeface swap is the "colours look slightly different" effect:
+// different stroke weight and antialiasing, same hues.
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+// Buttons. The publication links carry `.btn .btn-sm` with no colour variant.
+// MDB gave bare .btn `color: inherit`; Bootstrap hardcodes #212529, which goes
+// near-invisible against the dark theme. The rest restores MDB's geometry.
+// (z-depth-0 on those buttons already suppressed MDB's own button shadow.)
+.btn {
+  margin: 0.375rem;
+  color: inherit;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0.125rem;
+}
