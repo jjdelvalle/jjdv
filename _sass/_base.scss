@@ -451,3 +451,16 @@ body {
   border: 0;
   border-radius: 0.125rem;
 }
+
+// Badges. `.publications ... .abbr abbr` paints a --global-theme-color background
+// but sets no text colour, so the venue chips relied on MDB's
+// `.badge { color: #fff !important }`. Without it they inherit --global-text-color:
+// black on magenta in light mode, which measures 3.60:1 -- below WCAG AA. White
+// restores 5.83:1 in light and improves dark from 2.73:1 to 3.34:1.
+// !important is dropped deliberately: nothing else sets colour on .badge, and
+// leaving it off lets `.abbr .award` keep overriding this for award chips.
+.badge {
+  color: #fff;
+  border-radius: 0.125rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
