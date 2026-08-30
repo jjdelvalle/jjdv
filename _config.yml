@@ -88,6 +88,13 @@ collections:
     output: true
     permalink: /projects/:path/
 
+defaults:
+  - scope:
+      path: ""
+      type: news
+    values:
+      sitemap: false
+
 news_limit: 5
 
 # -----------------------------------------------------------------------------

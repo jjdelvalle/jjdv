@@ -3,6 +3,7 @@ layout: post
 title: Destroyed the GRE
 date: 2020-01-29
 inline: false
+sitemap: true
 ---
 
 I found out the GRE was a thing and started preparing for it in Novembre 2019. In December I decided to take the test again and was able to get a pretty good score, but it wasn't anywhere near where I wanted it to be.

@@ -3,6 +3,7 @@ layout: post
 title: Started my applied scientist internship at Amazon Alexa AI
 date: 2022-07-15
 inline: false
+sitemap: true
 ---
 
 Started my internship and things are exciting and confusing! I'll be working with the [Alexa AI team](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing).

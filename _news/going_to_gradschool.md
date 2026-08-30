@@ -3,6 +3,7 @@ layout: post
 title: Going to grad school!
 date: 2021-08-26
 inline: false
+sitemap: true
 ---
 
 In December of 2020 I applied to multiple grad school programs.
