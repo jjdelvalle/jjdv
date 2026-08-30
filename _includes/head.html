@@ -11,7 +11,7 @@
 {%- capture _site_name -%}{% include site_name.html %}{%- endcapture -%}
 {%- assign site_display = _site_name | strip -%}
 {%- if site.title and site.title != blank and site.title != 'blank' -%}{%- assign site_display = site.title -%}{%- endif -%}
-{%- assign page_desc = page.description | default: site.description | strip_newlines | strip -%}
+{%- assign page_desc = page.meta_description | default: page.description | default: site.description | strip_newlines | strip -%}
 {%- capture _page_title -%}{{ site_display }}{% if page.url == "/" %}{% if site.job_title %} — {{ site.job_title }}{% endif %}{% elsif page.title %} | {{ page.title }}{% endif %}{%- endcapture -%}
 {%- assign page_title = _page_title | strip -%}
 {%- assign og_img = page.og_image | default: site.og_image -%}
