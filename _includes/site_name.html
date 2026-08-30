@@ -1,0 +1,8 @@
+{%- comment -%}
+  Single source of truth for the display name.
+  middle_name is optional; when it is empty the naive
+  "{{ first }} {{ middle }} {{ last }}" leaves a double space, which is
+  invisible in HTML but survives into <title> and meta attributes.
+{%- endcomment -%}
+{%- assign _full_name = site.first_name | append: ' ' | append: site.middle_name | append: ' ' | append: site.last_name | replace: '  ', ' ' | strip -%}
+{{- _full_name -}}

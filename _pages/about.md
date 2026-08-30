@@ -3,6 +3,9 @@ layout: about
 title: about
 permalink: /
 description: AI Research Scientist with a passion for languages
+meta_description: >-
+  Jacobo Del Valle is an AI Research Scientist based in Cologne, Germany,
+  working on machine translation, multilingual large language models and NLP.
 
 profile:
   align: right
@@ -27,4 +30,4 @@ My hobbies include photography, playing the guitar, learning new languages, and 
 
 ***
 
-[My CV](personal/cv.pdf) details more about my journey and so does my [LinkedIn profile](https://linkedin.com/in/{{site.linkedin_username}}).
+[My CV](personal/cv.pdf) details more about my journey and so does my [LinkedIn profile](https://www.linkedin.com/in/{{ site.linkedin_username }}).

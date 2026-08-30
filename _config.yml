@@ -7,7 +7,7 @@ first_name: Jacobo
 middle_name:
 last_name: Del Valle
 email: delvallejacobo@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: >- # ">-" folds newlines AND strips the trailing one (keeps meta tags clean)
   My personal site showcasing projects and past experiences
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noreferrer">Jekyll</a>. Find this site <a href="https://github.com/jjdelvalle/jjdv" target="_blank" rel="noreferrer">on GitHub</a>.
@@ -16,6 +16,26 @@ url: https://jacobodelvalle.com
 baseurl: '' # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+
+# -----------------------------------------------------------------------------
+# Identity (schema.org Person / structured data)
+# -----------------------------------------------------------------------------
+# Consumed by _includes/jsonld.html. Leave a key empty to omit it from the
+# JSON-LD entirely -- an absent field is always better than an empty one.
+job_title: AI Research Scientist
+location_city: Cologne
+location_country: DE # ISO 3166-1 alpha-2
+
+alumni_of:
+  - Universidad Galileo
+  - Charles University
+  - Saarland University
+
+knows_about:
+  - Natural Language Processing
+  - Machine Translation
+  - Multilingual Large Language Models
+  - Machine Learning
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -32,7 +52,7 @@ max_width: 800px
 # Open Graph
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------

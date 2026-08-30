@@ -2,18 +2,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>{% if site.title == blank %}{{ site.title }}{% else %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% endif %}{% if page.title and page.url != "/" %} | {{ page.title }}{% endif %}</title>
-<meta name="description" content="{{ site.description }}">
+{%- comment -%}
+  Title / description / Open Graph are all derived from the same few values so
+  they can never drift apart. site_display honours a real site.title but falls
+  back to the person's name, which is what the "blank" sentinel in _config.yml
+  means.
+{%- endcomment -%}
+{%- capture _site_name -%}{% include site_name.html %}{%- endcapture -%}
+{%- assign site_display = _site_name | strip -%}
+{%- if site.title and site.title != blank and site.title != 'blank' -%}{%- assign site_display = site.title -%}{%- endif -%}
+{%- assign page_desc = page.description | default: site.description | strip_newlines | strip -%}
+{%- capture _page_title -%}{{ site_display }}{% if page.url == "/" %}{% if site.job_title %} — {{ site.job_title }}{% endif %}{% elsif page.title %} | {{ page.title }}{% endif %}{%- endcapture -%}
+{%- assign page_title = _page_title | strip -%}
+{%- assign og_img = page.og_image | default: site.og_image -%}
+{%- if page.url == "/" -%}{%- assign og_type = 'profile' -%}
+{%- elsif page.layout == 'post' -%}{%- assign og_type = 'article' -%}
+{%- else -%}{%- assign og_type = 'website' -%}{%- endif -%}
+
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc | escape }}">
 
 <!-- Open Graph -->
-{% if site.serve_og_meta %}
-<meta property="og:site_name" content="{{ site.description }}" />
-<meta property="og:type" content="object" />
-<meta property="og:title" content="{{ site.name }}" />
+{%- if site.serve_og_meta %}
+<meta property="og:site_name" content="{{ site_display | escape }}" />
+<meta property="og:type" content="{{ og_type }}" />
+<meta property="og:title" content="{{ page_title | escape }}" />
 <meta property="og:url" content="{{ page.url | replace: '/index.html', '/' | absolute_url }}" />
-<meta property="og:description" content="{{ page.title }}" />
-<meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
-{% endif %}
+<meta property="og:description" content="{{ page_desc | escape }}" />
+{%- if og_img and og_img != '' %}
+<meta property="og:image" content="{{ og_img | absolute_url }}" />
+<meta name="twitter:card" content="summary_large_image" />
+{%- else %}
+<meta name="twitter:card" content="summary" />
+{%- endif %}
+<meta name="twitter:title" content="{{ page_title | escape }}" />
+<meta name="twitter:description" content="{{ page_desc | escape }}" />
+{%- endif %}
 
 <!-- Bootstrap & MDB -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/{{ site.bootstrap.version }}/css/bootstrap.min.css" rel="stylesheet" integrity="{{ site.bootstrap.integrity.css }}" crossorigin="anonymous" media="print" onload="this.media='all'">
@@ -34,6 +58,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" media="print" onload="this.media='all'">
 
 <link rel="canonical" href="{{ page.url | replace: '/index.html', '/' | absolute_url }}">
+{% include jsonld.html %}
 
 <!-- Fallback CSS and Font loading for users with js disabled -->
 <noscript>
