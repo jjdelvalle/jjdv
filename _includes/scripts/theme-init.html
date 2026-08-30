@@ -1,22 +1,25 @@
 {%- comment -%}
   Inlined and render-blocking on purpose. This sets data-theme on <html> before
-  the first paint; loading it with `defer` (as it was) runs it after parsing, so
-  the page painted in the wrong theme and then repainted. The file's own opening
-  comment said as much: "Has to be in the head tag, otherwise a flicker effect
-  will occur." Small enough that inlining also saves a request.
+  the first paint; loading it with `defer` runs it after parsing, so the page
+  painted in the wrong theme and then repainted. The original file said as much:
+  "Has to be in the head tag, otherwise a flicker effect will occur."
+
+  The original also had a persistence bug. When nothing was stored it left
+  `theme` as null, then called localStorage.setItem("theme", null) -- which
+  stores the *string* "null". On the next visit `"null" == null` is false, so
+  the prefers-color-scheme branch never ran again and the site stopped following
+  the OS theme, permanently. Validating against the two known values below fixes
+  that and also heals any visitor already carrying the bad "null" entry.
 {%- endcomment -%}
 <script>
-  let initTheme = (theme) => {
-    if (theme == null) {
-      const userPref = window.matchMedia;
-      if (userPref && userPref('(prefers-color-scheme: dark)').matches) {
-        theme = 'dark';
-      }
+  (function () {
+    var theme = localStorage.getItem("theme");
+    if (theme !== "light" && theme !== "dark") {
+      theme = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ? "dark"
+        : "light";
     }
-    if (theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-    }
+    document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
-  }
-  initTheme(localStorage.getItem("theme"));
+  })();
 </script>
