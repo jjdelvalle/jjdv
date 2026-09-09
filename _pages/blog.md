@@ -191,7 +191,7 @@ pagination:
         {% endif %}
         {% for trail in paginator.page_trail %}
           <li class="page-item {% if page.url == trail.path %}active{% endif %}">
-            <a class="page-link" href="{{ trail.path | relative_url }}">{{ trail.num }}</a>
+            <a class="page-link" href="{{ trail.path | replace: '/index.html', '/' | relative_url }}">{{ trail.num }}</a>
           </li>
         {% endfor %}
         {% if paginator.next_page %}
